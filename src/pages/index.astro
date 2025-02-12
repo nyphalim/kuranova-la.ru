@@ -1,5 +1,4 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,5 +6,96 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<section class="container font-semibold mx-auto text-center pt-10">
+		<h1 class="lg:text-5xl text-3xl lg:leading-[1.2]"><span class="p-1 bg-yellow-200 rounded">Долгосрочная аренда</span> квартир<br>
+			<span class="lg:text-3xl text-xl">Екатеринбург/Краснотурьинск</span>
+		</h1>
+	</section>
+	<section class="text-gray-600 body-font">
+		<div class="container px-5 lg:pt-24 pt-10 pb-0 mx-auto flex flex-wrap">
+			<div class="flex w-full lg:mb-8 sm:mb-4 flex-wrap">
+				<h2 class="sm:text-3xl text-2xl font-thin title-font text-gray-900 lg:mb-0 mb-4">г.&nbsp;Екатеринбург, ул.&nbsp;Шаумяна&nbsp;28</h2>
+			</div>
+			<div class="flex flex-wrap md:-m-2 -m-1">
+				<div class="flex flex-wrap w-1/2">
+					<div class="md:p-2 p-1 w-1/2">
+						<img alt="gallery" class="w-full object-cover h-full object-center block" src="/img/shaumyana/1.jpg">
+					</div>
+					<div class="md:p-2 p-1 w-1/2">
+						<img alt="gallery" class="w-full object-cover h-full object-center block" src="/img/shaumyana/2.jpeg">
+					</div>
+					<div class="md:p-2 p-1 w-full">
+						<img alt="gallery" class="w-full h-full object-cover object-center block" src="/img/shaumyana/3.jpeg">
+					</div>
+				</div>
+				<div class="flex flex-wrap w-1/2">
+					<div class="md:p-2 p-1 w-full">
+						<img alt="gallery" class="w-full h-full object-cover object-center block" src="/img/shaumyana/4.jpeg">
+					</div>
+					<div class="md:p-2 p-1 w-1/2">
+						<img alt="gallery" class="w-full object-cover h-full object-center block" src="/img/shaumyana/7.jpeg">
+					</div>
+					<div class="md:p-2 p-1 w-1/2">
+						<img alt="gallery" class="w-full object-cover h-full object-center block" src="/img/shaumyana/8.jpeg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="text-gray-600 body-font">
+		<div class="container px-5 lg:pt-24 pt-10 lg:pb-24 pb-10 mx-auto flex flex-wrap">
+			<div class="flex w-full lg:mb-8 sm:mb-4 flex-wrap">
+				<h2 class="sm:text-3xl text-2xl font-thin title-font text-gray-900 lg:mb-0 mb-4">г.&nbsp;Краснотурьинск, ул.&nbsp;Ленина&nbsp;96</h2>
+			</div>
+			<div class="flex flex-wrap md:-m-2 -m-1">
+				<div class="flex flex-wrap w-1/2">
+					<div class="md:p-2 p-1 w-1/2">
+						<img alt="gallery" class="w-full object-cover h-full object-center block" src="/img/lenina/1.png">
+					</div>
+					<div class="md:p-2 p-1 w-1/2">
+						<img alt="gallery" class="w-full object-cover h-full object-center block" src="/img/lenina/2.png">
+					</div>
+					<div class="md:p-2 p-1 w-full">
+						<img alt="gallery" class="w-full h-full object-cover object-center block" src="/img/lenina/3.png">
+					</div>
+				</div>
+				<div class="flex flex-wrap w-1/2">
+					<div class="md:p-2 p-1 w-full">
+						<img alt="gallery" class="w-full h-full object-cover object-center block" src="/img/lenina/4.png">
+					</div>
+					<div class="md:p-2 p-1 w-1/2">
+						<img alt="gallery" class="w-full object-cover h-full object-center block" src="/img/lenina/5.png">
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container font-semibold mx-auto pb-20 text-center">
+		<h3 class="text-3xl leading-[1.2]">Нажмите кнопку, чтобы оплатить проживание</h3>
+		<a class="max-w-[320px] text-center flex justify-center mx-auto mt-7 text-white bg-yellow-500 border-0 py-3 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg" href="#"><span>Оплатить</span></a>
+	</section>
+	<footer class="bg-gray-100 font-light py-5">
+		<div class="container px-5 mx-auto">
+			<ul class="flex md:flex-row flex-col justify-around flex-wrap gap-[8px]">
+				<li>ИП Куранова Л.А.</li>
+				<li>Краснотурьинск, ул.Урожайная д. 3</li>
+				<li>+7 (950)642-79-79</li>
+				<li>sherykoba@gmail.com</li>
+			</ul>
+		</div>
+	</footer>
 </Layout>
+
+<style lang="scss">
+	footer {
+		ul {
+			li:first-child {
+				font-weight: 600;
+			}
+			li:not(:first-child) {
+				color: var(--color-gray-500);
+			}
+		}
+	}
+</style>
